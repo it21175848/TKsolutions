@@ -1,9 +1,3 @@
-function moveToNext(currentInput, nextInputId) {
-    if (currentInput.value.length === 1) {
-        document.getElementById(nextInputId).focus();
-    }
-}
-
 function verifyOTP() {
     const otp = document.getElementById("digit1").value +
                 document.getElementById("digit2").value +
@@ -14,8 +8,8 @@ function verifyOTP() {
     const validOTP = "kiru"; // Change this to your expected OTP
 
     if (otp === validOTP) {
-        document.getElementById("message").textContent = "OTP Verified!";
+        alert("OTP Verified!");
     } else {
-        document.getElementById("message").textContent = "OTP Invalid. Please try again.";
+        alert("OTP Invalid. Please try again.");
     }
 }
