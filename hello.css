@@ -72,3 +72,21 @@ body {
     background-attachment: fixed;
     background-position: center;
 }
+
+/* Define the keyframes for the animation */
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply the animation to the element with the "thanu" class */
+  .thanu {
+    animation: slideInFromLeft 1s ease;
+  }
+  
